@@ -19,13 +19,16 @@ namespace Payments
 
         public void Pay(TypePayment type)
         {
-            if(type == TypePayment.Terminal)
+            switch (type)
             {
-                SetStrategy(new TerminalPayment());
-            }
-            if(type == TypePayment.Cash)
-            {
-                SetStrategy(new  CashPayment());
+                case TypePayment.Terminal:
+                    SetStrategy(new TerminalPayment());
+                    break;
+                case TypePayment.Cash:
+                    SetStrategy(new CashPayment());
+                    break;
+                default:
+                    throw new ArgumentException("Invalid payment type specified.");
             }
         }
     }
