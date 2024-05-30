@@ -5,11 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Main"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBox x:Name="tex" HorizontalAlignment="Left" Margin="56,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="715" Height="414"/>
-        <DatePicker x:Name="dat" Margin="296,251,400,153" Height="30" Width="104"/>
-        <Button x:Name="bt" Content="Button" Height="33" Margin="431,328,231,73" Width="138" d:LayoutOverrides="Width, Height" Click="bt_Click"/>
+        Title="MainWindow" Height="450" Width="800" MinWidth="800" MaxWidth="800" MinHeight="450" MaxHeight="450">
+    <Grid Width="800" Height="434" MinWidth="800" MaxWidth="800" MinHeight="434" MaxHeight="434">
+        <Rectangle Fill="#4E4E4E" Margin="0,0,0,376" HorizontalAlignment="Center" Width="800" />
+        <Label Content="POS-system" HorizontalAlignment="Left" Margin="10,16,0,0" VerticalAlignment="Top"/>
+        <Label Content="Name of the hotel" HorizontalAlignment="Left" FontSize="32" FontWeight="Bold" Margin="282,2,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="registerButton" Content="Зареєструвати" Background="White" Foreground="Black" BorderBrush="#4E4E4E" BorderThickness="2" FontSize="18" FontWeight="Bold" Margin="47,104,542,270" Click="registerButton_Click"/>
+        <Button x:Name="FreeRooms" Content="Вільні номери" Background="White" Foreground="Black" BorderBrush="#4E4E4E" BorderThickness="2" FontSize="18" FontWeight="Bold" Margin="47,257,542,117" Click="FreeRooms_Click"/>
+
+
+        <Grid x:Name="register" Background="#72000A63" Margin="361,58,0,0" Visibility="Visible">
+
+            <Rectangle Fill="Black" Margin="0,83,0,283" HorizontalAlignment="Center" Width="439"></Rectangle>
+            <ComboBox x:Name="FloorComboBox" Width="56" Height="22" Background="#F0F0F0" BorderBrush="#707070" Foreground="#333333" Margin="113,14,270,340" SelectedIndex="0" RenderTransformOrigin="1.143,0.455"/>
+            <Label Content="Поверх :" FontFamily="bold" Margin="10,10,373,340" Height="26" Width="56" d:LayoutOverrides="Height"/>
+            <RadioButton Content="RadioButton" Margin="71,57,368,319"/>
+            <CheckBox x:Name="PetCheckBox" Content="Дозвіл на тварин" Margin="298,10,28,345" Height="21" Width="113"/>
+            <CheckBox x:Name="AirConditioningCheckBox" Content="Кондиціонер" Margin="298,31,28,324" Height="21" Width="113"/>
+            <CheckBox x:Name="TVCheckBox" Content="Телевізор" Margin="298,52,28,303" Height="21" Width="113"/>
+            <CheckBox x:Name="MiniBarCheckBox" Content="Мінібар" Margin="198,9,128,346" Height="21" Width="113" d:LayoutOverrides="HorizontalAlignment, Height"/>
+            <CheckBox x:Name="SafeCheckBox" Content="Сейф" Margin="198,31,128,324" Height="21" Width="113"/>
+            <CheckBox x:Name="BreakfastCheckBox" Content="Сніданок" Margin="198,52,128,303" Height="21" Width="113"/>
+            <ComboBox x:Name="RoomNumberComboBox" Width="56" Height="22" Background="#F0F0F0" BorderBrush="#707070" Foreground="#333333" Margin="113,43,270,311" SelectedIndex="0"/>
+            <Label Content="Номер кімнати:" FontFamily="bold" Margin="10,41,331,309" Height="26"/>
+            <TextBlock x:Name="NameGuestTextBlock" Background="White" Margin="135,134,65,211" TextWrapping="Wrap" Height="31" d:LayoutOverrides="HorizontalAlignment, Height"/>
+            <Label Content="Інформація Гостя" FontSize="20" HorizontalContentAlignment="Center"  FontFamily="bold" Margin="0,98,0,0" Height="36" d:LayoutOverrides="HorizontalAlignment" VerticalAlignment="Top"/>
+            <TextBlock x:Name="NumberPassportGuestTextBlock" Background="White" Margin="135,183,65,162" TextWrapping="Wrap" Height="31" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
+            <Label Content="Ім`я :" HorizontalAlignment="Left" Margin="22,133,0,217" Height="26" d:LayoutOverrides="Height"/>
+            <Label Content="Номер паспорта :" HorizontalAlignment="Left" Margin="22,183,0,167" Height="26" d:LayoutOverrides="VerticalAlignment"/>
+            <Button Content="Button" Height="0" Margin="108,312,331,64" Width="0"/>
+            <Button x:Name="GiveRoom" Content="Оформити" Background="White" Foreground="Black" BorderBrush="#4E4E4E" BorderThickness="2" FontSize="18" FontWeight="Bold" Margin="22,282,25,0"  Height="60" VerticalAlignment="Top"/>
+            <DatePicker x:Name="DataOutDatePicker" Margin="135,235,65,111" Height="30" d:LayoutOverrides="HorizontalAlignment, Height"/>
+            <Label Content="До якого терміна :" HorizontalAlignment="Left" Margin="26,235,0,115" Height="26" d:LayoutOverrides="Height"/>
+
+
+
+        </Grid>
+
+
+        <Grid x:Name="freeRoom" Background="#72000A63" Margin="361,58,0,0" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" Visibility="Hidden">
+
+
+        </Grid>
+
+
+
 
     </Grid>
 </Window>

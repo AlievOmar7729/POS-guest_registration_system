@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Guest(Singleton)\Guest(Singleton).csproj" />
     <ProjectReference Include="..\HotelRoomCreater(Builder)\HotelRoomCreater(Builder).csproj" />
+    <ProjectReference Include="..\Payments\Payments(Strategy).csproj" />
   </ItemGroup>
 
 </Project>
