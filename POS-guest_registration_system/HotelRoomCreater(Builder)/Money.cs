@@ -36,5 +36,10 @@ namespace HotelRoomCreater_Builder_
             Whole = whole;
             Fractions = fractions;
         }
+
+        public override string ToString()
+        {
+            return $"{Amount} {currency.Symbol}";
+        }
     }
 }

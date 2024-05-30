@@ -8,6 +8,8 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <TextBox x:Name="tex" HorizontalAlignment="Left" Margin="56,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="715" Height="414"/>
+        <DatePicker x:Name="dat" Margin="296,251,400,153" Height="30" Width="104"/>
+        <Button x:Name="bt" Content="Button" Height="33" Margin="431,328,231,73" Width="138" d:LayoutOverrides="Width, Height" Click="bt_Click"/>
 
     </Grid>
 </Window>

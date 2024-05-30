@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Guest(Singleton)\Guest(Singleton).csproj" />
     <ProjectReference Include="..\HotelRoomCreater(Builder)\HotelRoomCreater(Builder).csproj" />
   </ItemGroup>
 

@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HotelRoomCreater(Builder)\HotelRoomCreater(Builder).csproj" />
+  </ItemGroup>
+
 </Project>

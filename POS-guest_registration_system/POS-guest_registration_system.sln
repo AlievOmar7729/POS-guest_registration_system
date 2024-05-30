@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Main", "Main\Main.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelRoomCreater(Builder)", "HotelRoomCreater(Builder)\HotelRoomCreater(Builder).csproj", "{2D6D77C0-BAE9-46DE-A81E-268ED4A5A5CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guest(Singleton)", "Guest(Singleton)\Guest(Singleton).csproj", "{7F770031-F402-415E-984C-06C842CB0AD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2D6D77C0-BAE9-46DE-A81E-268ED4A5A5CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D6D77C0-BAE9-46DE-A81E-268ED4A5A5CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D6D77C0-BAE9-46DE-A81E-268ED4A5A5CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F770031-F402-415E-984C-06C842CB0AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F770031-F402-415E-984C-06C842CB0AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F770031-F402-415E-984C-06C842CB0AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F770031-F402-415E-984C-06C842CB0AD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
