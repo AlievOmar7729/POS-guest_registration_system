@@ -10,7 +10,7 @@ namespace Guest_Singleton_
 {
     public class PriceCalculator : IStayDurationCalculator, ITotalCostCalculator
     {
-        public Money CalculateCostStay(Guest guest, HotelRoomDetails hotel)
+        public  Money CalculateCostStay(Guest guest, HotelRoomDetails hotel)
         {
 
             int count_day = CalculateStayDuration(guest);
